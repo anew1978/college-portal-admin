@@ -88,6 +88,35 @@ export default [
     ]
   },
   {
+    path: '/my',
+    name: 'my',
+    meta: {
+      icon: 'logo-buffer',
+      title: '我的'
+    },
+    component: Main,
+    children: [
+      {
+        path: 'my_page',
+        name: '我的测试1',
+        meta: {
+          icon: '_qq',
+          title: 'Rock'
+        },
+        component: () => import('@/view/my-page.vue')
+      },
+      {
+        path: 'my_page2',
+        name: '我的测试2',
+        meta: {
+          icon: '_qq',
+          title: 'Rock2'
+        },
+        component: () => import('@/view/my-page.vue')
+      }
+    ]
+  },
+  {
     path: '/message',
     name: 'message',
     component: Main,
@@ -386,7 +415,7 @@ export default [
         name: 'level_2_1',
         meta: {
           icon: 'md-funnel',
-          title: '二级-1'
+          title: '二级-111'
         },
         component: () => import('@/view/multilevel/level-2-1.vue')
       },
