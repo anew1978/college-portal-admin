@@ -60,6 +60,15 @@ export default [
     }
   },
   {
+    path: '',
+    name: 'mytest21',
+    meta: {
+      title: '我的测试21',
+      href: 'http://www.hnust.edu.cn',
+      icon: 'ios-book'
+    }
+  },
+  {
     path: '/join',
     name: 'join',
     component: Main,
