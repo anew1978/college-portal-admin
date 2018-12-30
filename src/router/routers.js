@@ -42,7 +42,7 @@ export default [
         name: 'home',
         meta: {
           hideInMenu: true,
-          title: '首页',
+          title: '首页11',
           notCache: true,
           icon: 'md-home'
         },
@@ -54,7 +54,7 @@ export default [
     path: '',
     name: 'doc',
     meta: {
-      title: '文档',
+      title: '文档11',
       href: 'https://lison16.github.io/iview-admin-doc/#/',
       icon: 'ios-book'
     }
@@ -103,7 +103,7 @@ export default [
     name: 'components',
     meta: {
       icon: 'logo-buffer',
-      title: '组件'
+      title: '组件11'
     },
     component: Main,
     children: [
