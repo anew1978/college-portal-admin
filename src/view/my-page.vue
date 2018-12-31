@@ -27,7 +27,7 @@
 import qqFans from '@/assets/images/qq-group1.jpg'
 import qqFans2 from '@/assets/images/qq-group2.jpg'
 export default {
-  name: 'join_page',
+  name: 'my_page',
   data () {
     return {
       qqFans,
