@@ -8,6 +8,17 @@
     <br>
     <Row :gutter="20">
       <i-col span="12">
+        <Select v-model="model10" multiple style="width:260px">
+          <Option v-for="item in cityList" :value="item.value" :key="item.value">{{ item.label }}</Option>
+        </Select>
+      </i-col>
+      <i-col span="12">
+        <DatePicker type="daterange" placement="bottom-end" placeholder="Select date" style="width: 200px"></DatePicker>
+      </i-col>
+    </Row>
+    <br>
+    <Row :gutter="20">
+      <i-col span="12">
         <Card title="iview-admin交流群(已满)" shadow>
           <img class="qq-group-img" :src="qqFans" alt="">
           <p class="qq-group-intro">11本群为使用iview-admin或者对iview-admin感兴趣的开发者提供交流平台，在这里，解决你开发中的疑惑，共同进步。</p>
@@ -32,6 +43,33 @@ export default {
     return {
       qqFans,
       qqFans2,
+      cityList: [
+        {
+          value: 'New York',
+          label: 'New York'
+        },
+        {
+          value: 'London',
+          label: 'London'
+        },
+        {
+          value: 'Sydney',
+          label: 'Sydney'
+        },
+        {
+          value: 'Ottawa',
+          label: 'Ottawa'
+        },
+        {
+          value: 'Paris',
+          label: 'Paris'
+        },
+        {
+          value: 'Canberra',
+          label: 'Canberra'
+        }
+      ],
+      model10: [],
       columns1: [
         {
           title: 'Name',
