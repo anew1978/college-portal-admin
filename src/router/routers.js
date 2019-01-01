@@ -42,7 +42,7 @@ export default [
         name: 'home',
         meta: {
           hideInMenu: true,
-          title: '首页11',
+          title: '首页111',
           notCache: true,
           icon: 'md-home'
         },
